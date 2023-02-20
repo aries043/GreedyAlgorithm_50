@@ -1,14 +1,12 @@
 N = int(input())
 ans = 0
+five = N//5
 
-if N<=4:
-    print("-1")
-else:
-    while(N>=5):
-        N-=5
-        ans+=1
+while(five>=0):
+    if (N - 5*five)%3==0:
+        ans = five + (N - 5*five)//3
+        break
+    else:
+        five -= 1
 
-    while(N>=3):
-        N-=3
-        ans+=1
-    print(ans+N)
+print(ans) if ans != 0 else print(-1)
