@@ -10,3 +10,4 @@ while(five>=0):
         five -= 1
 
 print(ans) if ans != 0 else print(-1)
+
