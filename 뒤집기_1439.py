@@ -15,5 +15,3 @@ else:
         ans = cnt_one
 
 print(ans)
-
-010101010
